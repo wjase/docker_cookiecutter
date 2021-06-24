@@ -2,18 +2,18 @@
 
 Run cookiecutter on any docker supported machine running bash
 
-# To build image
+## To build image
 
 Run
 
     build.sh
 
-# To use cookiecutter
+## To use cookiecutter
 
 Run 
 
     ck.sh [cookiecutter args]
 
-eg
+eg To create a new golang project 
 
-    ./ck.sh gh:
+    ./ck.sh gh:spotify/cookiecutter-golang
