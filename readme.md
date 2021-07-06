@@ -12,8 +12,14 @@ Run
 
 Run 
 
-    ck.sh [cookiecutter args]
+    cookiecutter.sh [cookiecutter args]
 
 eg To create a new golang project 
 
-    ./ck.sh gh:spotify/cookiecutter-golang
+    ./cookiecutter.sh gh:lacion/cookiecutter-golang
+
+## install in PATH with softlink
+
+Run
+
+    ./install.sh

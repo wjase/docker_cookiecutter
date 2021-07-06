@@ -6,11 +6,7 @@ RUN apt install \
       && pip install cookiecutter && \
       rm -rf /var/cache/apk/*
 
-RUN mkdir -p /.cookiecutters
-RUN mkdir -p /.git
+COPY ./run_as_user.sh /scripts/run_as_user.sh
+RUN chmod +x /scripts/run_as_user.sh
 
-COPY ./cookie_and_chown.sh /scripts/cookie_and_chown.sh
-RUN chmod +x /scripts/cookie_and_chown.sh
-
-
-ENTRYPOINT [ "/scripts/cookie_and_chown.sh" ]
+ENTRYPOINT [ "/scripts/run_as_user.sh" ]
